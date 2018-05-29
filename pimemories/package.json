@@ -1,0 +1,28 @@
+{
+  "name": "boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scedge/boilerplate.git"
+  },
+  "author": "scedge",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scedge/boilerplate/issues"
+  },
+  "homepage": "https://github.com/scedge/boilerplate",
+  "dependencies": {
+    "express": "^4.13.3",
+    "express-handlebars": "^2.0.1",
+    "livereload": "^0.6.2",
+    "lowdb": "^0.16.0",
+    "node-dev": "^3.1.3",
+    "object-keys": "^1.0.11",
+    "websocket.io": "^0.2.1"
+  }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Raspberry Pi - Face Game</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <script src="assets/js/jquery/jquery-3.2.0.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script>
+      document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+      ':35729/livereload.js?snipver=1"></' + 'script>')
+    </script>
+</head>
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/all">HPS: Faces</a>
+      </div>
+      <div>
+        <ul class="nav navbar-nav">
+          <li class={{#if menuitem.all}}"active"{{/if}}><a href="/all">All of Today's Faces</a></li>
+          <li class={{#if menuitem.newfaces}}"active"{{/if}}><a href="/newfaces">New Faces</a></li>
+          <li class={{#if menuitem.familiarfaces}}"active"{{/if}}><a href="/familiarfaces">Familiar Faces</a></li>
+          <li class={{#if menuitem.timelapse}}"active"{{/if}}><a href="/timelapse">Timelapse of My Day</a></li>
+          <li class={{#if menuitem.stats}}"active"{{/if}}><a href="/stats">Today's Stats</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    {{{body}}}
+
+    <div class="container">
+      <hr>
+      <!-- Footer -->
+      <footer>
+        <div class="row">
+          <div class="col-lg-12">
+            <p>Faces for March 28, 2017</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+</body>
+</html>
